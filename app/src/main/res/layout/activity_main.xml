@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <View
+        android:layout_marginBottom="230dp"
+        app:layout_constraintBottom_toTopOf="@+id/or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:background="@drawable/triangle_background"
+        android:rotation="45"/>
+
+    <ImageView
+        app:layout_constraintVertical_bias="0.465"
+        android:layout_marginBottom="145dp"
+        app:layout_constraintBottom_toTopOf="@+id/or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_arrow"
+        android:rotation="90"
+        />
+
+    <ImageView
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_owl"/>
+
+
+
+    <Button
+        android:id="@+id/gameNow"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="18sp"
+        android:text="GAME NOW"
+        android:layout_width="350dp"
+        android:layout_height="58dp"
+
+        />
+
+    <Button
+        android:id="@+id/logFacebook"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/or"
+        app:layout_constraintEnd_toEndOf="@+id/or"
+        app:layout_constraintStart_toStartOf="@+id/or"
+        android:text="Log in with Facebook"
+        android:layout_width="350dp"
+        android:layout_height="58dp" />
+
+    <Button
+        android:id="@+id/email"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/or"
+        app:layout_constraintEnd_toEndOf="@+id/or"
+        app:layout_constraintStart_toStartOf="@+id/or"
+        android:textStyle="bold"
+        android:text="Up with Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/LeftLine"
+        app:layout_constraintEnd_toStartOf="@+id/or"
+        app:layout_constraintTop_toTopOf="@+id/or"
+        app:layout_constraintBottom_toBottomOf="@+id/or"
+        android:background="@color/grey"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="233dp"
+        android:layout_marginEnd="8dp"/>
+
+    <View
+        android:id="@+id/RightLine"
+        app:layout_constraintStart_toEndOf="@+id/or"
+        app:layout_constraintTop_toTopOf="@+id/or"
+        app:layout_constraintBottom_toBottomOf="@+id/or"
+        android:background="@color/grey"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="233dp"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/trivia"
+        android:textColor="@color/white"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="38dp"
+        android:text="Trivia"/>
+
+
+
+    <TextView
+        android:id="@+id/or"
+        android:textColor="@color/grey"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="OR"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:id="@+id/login"
+        android:textColor="@color/white"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="LOG IN" />
+
+    <ImageView
+        app:layout_constraintHorizontal_bias="0.130"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logFacebook"
+        app:layout_constraintBottom_toBottomOf="@+id/logFacebook"
+        android:src="@drawable/ic_facebook_log"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
